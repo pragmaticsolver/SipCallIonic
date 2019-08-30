@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Phone Dialor
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+      <ion-label floating>Phone Number</ion-label>
+      <ion-input type="tel" [(ngModel)]="phonenumber"></ion-input>
+    </ion-item>
+
+    <ion-fab bottom right>
+      <button ion-fab >
+        <ion-icon name="call" (click)="callNumber()"></ion-icon>
+      </button>
+    </ion-fab>
+
+</ion-content>
